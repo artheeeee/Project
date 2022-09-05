@@ -27,3 +27,38 @@ class BoxForm(ModelForm):
     class Meta:
         model = RequestDonationBox
         fields = ['name', 'email', 'phone', 'state', 'city', 'address', 'sub_group']
+
+        class EnvForm(ModelForm):
+
+    def clean(self):
+        cleaned_data = super(EnvForm, self).clean()
+        city = cleaned_data.get("city")
+        state = cleaned_data.get("state")
+
+        if not city == "Singapore":
+            raise forms.ValidationError("City must be 'Singapore'")
+        if not state == "Singapore":
+            raise forms.ValidationError("State must be Singapore")
+        return(cleaned_data)
+
+    class Meta:
+        model = RequestEnvelope
+        fields = ['name', 'email', 'phone', 'state', 'city', 'address', 'sub_group']
+
+
+class ClothingForm(ModelForm):
+
+    def clean(self):
+        cleaned_data = super(ClothingForm, self).clean()
+        city = cleaned_data.get("city")
+        state = cleaned_data.get("state")
+
+        if not city == "Singapore":
+            raise forms.ValidationError("City must be 'Singapore'")
+        if not state == "Singapore":
+            raise forms.ValidationError("State must be 'Singapore'")
+        return(cleaned_data)
+
+    class Meta:
+        model = RequestDonationBox
+        fields = ['name', 'email', 'phone', 'state', 'city', 'address', 'date', 'time', 'cc']
