@@ -1,13 +1,5 @@
-# nonprofit
+# non-profit web application
 
-This file contains the project codes however due to certian file that was unable to commit to push to github it was manually uploaded 
-hence there might be a change in the folder location
-
-Original file order :
-
-Main folder : Project 
-Subfolder : nonprofit
-Subfolder : project
-
-Sorry for the mistake please do forgive for the mistake.
-
+This file contains the project codes of the web application which is in working condition last checked on 05 September 2022. 
+This project contains a Main Project Folder named : Project with sub folders "nonprofit" and "project".
+There is a requirements.txt for needed installation to do before running the codes.
