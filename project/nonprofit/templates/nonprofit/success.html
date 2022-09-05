@@ -1,0 +1,13 @@
+{% extends 'nonprofit/template.html' %}
+
+{% load static %}
+{% block content %}
+	<div id="box">
+		{% load static %} <img src="{% static "nonprofit/media/thankyou.jpg" %}" style="width:100%">
+		<h4>Thank you for your contribution of ${{amount}}!</h4>
+		<p>Your support has helped to reduce poverty worlwide! Thank You for making a difference to the community! You should receive a receipt to the email you provided shortly :)</p>
+		<hr>
+		<a class="myButton" href="{% url 'index' %}">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}

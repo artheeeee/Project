@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Me2UDonation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Donation Information</h1>
+    <a href="../index/"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Back to Home</button></a>
+  </header>
+  
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Cash Donation</h1>
+        <h5 class="w3-padding-32">Spend as less as a <mark>DOLLAR</mark> to help others feel happy :)</h5>
+  
+        <p class="w3-text-grey">You are doing a huge role in helping to reduce poverty by donating less than 1% of your income. You will be helping the people in need of the three most essential
+            needs in life "FOOD,EDUCATION & SHELTER". We will be 100% donating the amount to the respective option selection you have made.
+            <ul class="w3-text-grey">
+                <li>Food Donation starts from $1(1 Meal) to $7(7 Meals)</li>
+                <li>Education Donation starts from $10 : (1 year stationary+books supplies == 1 Child)</li>
+                <li>Grocery Donation starts from $15 : (rice bags, vegetables, hygiene products = 1 Family)</li>
+                <li>Special Day Donation starts from $30 : Is it your birthday? anniversary? special day? and feel like doing a extra special deed to make others feel happy. This is a great option to help a community by getting them food! </li>
+            </ul>
+        </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        {% load static %} <img src="{% static "nonprofit/media/cash.jpg" %}" alt="Cash" style="width:90%">
+        <a href="../cashindex/">  
+            <button>Ready to Donate?</button>  
+          </a>
+      
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        {% load static %} <img src="{% static "nonprofit/media/coinbox.jpg" %}" alt="coinbox" style="width:90%">
+        <a href="../donationbox/">  
+            <button>Ready to Subscribe?</button>  
+          </a>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>Donation Box Subscription</h1>
+        <h5 class="w3-padding-32"><mark>Do not own a credit card</mark> but want to help? Fret Not! This option is made JUST FOR YOU!</h5>
+  
+        <p class="w3-text-grey">Donation Box is similar to your piggy bank that you used to have when you were young to save up some cash. Similarly, you will be saving up some cash as little as you can and make the donation after the 
+            subscription period is over as penny simple as that! Steps to note:
+            <ul class="w3-text-grey">
+                <li> Step 1: Fill up the subscription form</li>
+                <li> Step 2: Choose your desired subscription months or years</li>
+                <li> Step 3: Fill up the donation box to the brim ;)</li>
+                <li> Step 4: Return to the nearest community centre after done!</li>
+            </ul>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Third Grid -->
+   <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Envelope Subscription</h1>
+        <h5 class="w3-padding-32">Feeling UNSAFE to make an online donation? or want to be NOSTALGIC in making a donation?</h5>
+  
+        <p class="w3-text-grey">Envelope subscription is specially catered to our prestigious <mark>eldely community</mark> out there, Don't feel left out as this subscription plan has 
+            got you covered. You just have to subscrie to this donation scheme and you will receive an envelope right to your doorstep to make the donation and all you have to do is :
+            SEAL IT, POST IT and get NOTIFIED!
+            You will be notified through an email/sms after your donation envelope has reached us!
+        </p>
+
+      </div>
+  
+      <div class="w3-third w3-center">
+        {% load static %} <img src="{% static "nonprofit/media/envelope.jpg" %}" alt="envelope" style="width:90%">
+        <a href="../envelope/">  
+            <button>Ready to Subscribe?</button>  
+          </a>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Forth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        {% load static %} <img src="{% static "nonprofit/media/cloth.jpg" %}" alt="clothing" style="width:90%">
+        <a href="../donationbox/">  
+            <button>Ready to Subscribe?</button>  
+          </a>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>Clothing Subscription</h1>
+        <h5 class="w3-padding-32">Option OTHER THAN MONEY, do not feel burdened by needing to use cash for donation simply switch to <mark>NONMONETARY</mark> donation!</h5>
+  
+        <p class="w3-text-grey">Non-Monetary donation option for you! Anyone of Any age regardless of gender will be able to help out in this donation. Feeling guilty that your spending at least 80% of your income on clothes? or Upset that the clothes do not fit you anymore?
+            Just DONATE them! These clothes that are being donated will be directly passed on to the rural poverty places for people who might really need them. Steps to note:
+            <ul class="w3-text-grey">
+                <li> Step 1: Fill up the clothing donation form</li>
+                <li> Step 2: Gather your old clothes in GOOD CONDITION</li>
+                <li> Step 3: Donate it at the nearest Community Centre</li>
+            </ul>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">always be grateful to what you have! make others happy when you can :)</h1>
+  </div>
+
+
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+   </div>
+  </footer>
+  
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
+  </body>
+  </html>
