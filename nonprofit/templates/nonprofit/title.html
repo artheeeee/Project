@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-md sticky-top flex-column">
+    <div class="w-100 d-flex">
+      <div class="navbar-header" id="header">
+        <h1 id="application_title">~let's start donating!~</h2>
+      </div>
+    </div>
+    <div class="w-100 d-flex">
+     <ul class="navbar-nav mr-auto" id="navigation">
+        <li class="nav-item active">
+         <a class="nav-link" href="../index/">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item active">
+          <a class="nav-link" href="../aboutus/">DonationInfo <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../info/">AboutUS <span class="sr-only">(current)</span></a>
+            </li>
+
+        {% if user.is_authenticated and user.is_superuser %}
+        <li class="nav-item active">
+          <a class="nav-link" href="../listbox/"> : ListDBox<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../listenv/"> : ListDEnv<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../listclothing/"> : ClothingList<span class="sr-only">(current)</span></a>
+        </li>
+      
+        {% endif %}
+      
+        {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="../logout/"> : Logout<span class="sr-only">(current)</span></a>
+        </li>
+        {% else %}
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../login/">Login</a>
+              <a class="dropdown-item" href="../register/"> Register</a>
+            </div>
+          </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Donation
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../donationbox/">Box</a>
+                <a class="dropdown-item" href="../envelope/"> Envelope</a>
+                <a class="dropdown-item" href="../cashindex/"> Cash</a>
+                <a class="dropdown-item" href="../clothing/"> Clothing</a>
+              </div>
+            </div>
+        {% endif %}
+     </ul>
+     </div>
+  </nav>
+  

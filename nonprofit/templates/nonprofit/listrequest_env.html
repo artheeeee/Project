@@ -1,0 +1,32 @@
+{% include "./header.html" %}
+{% include "./title.html" %}
+
+{% load bootstrap4 %}
+
+
+<div class="container">
+    {% if requests %}
+    <h3 class="text-center">All Envelope Donation Subscription</h3>
+    <br>
+    <table class="table table-sm table-bordered">
+      <tr class="table-danger">
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Subscription Group</th>
+        <th>State | City</th>
+      </tr>
+      {% for i in requests %}
+        <tr>
+          <td>{{i.name}}</td>
+          <td>{{i.phone}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.sub_group}}</td>
+          <td>{{i.state}} | {{i.city}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <h2>No Envelope Donation Subscription Available</h2>
+    {% endif %}
+    </div>
